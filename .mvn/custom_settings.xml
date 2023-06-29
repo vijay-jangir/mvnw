@@ -1,0 +1,19 @@
+<settings>
+  <mirrors>
+    <mirror>
+      <id>central-proxy</id>
+      <name>nexus-internal</name>
+      <!-- FIXME -->
+      <url>http://localhost:8081/repository/maven-public/</url>
+      <mirrorOf>*</mirrorOf>
+    </mirror>
+  </mirrors>
+<!-- Make sure you add yourself to didev_ocpdev ad group from service now before using this -->
+  <servers>
+    <server>
+      <id>central-proxy</id>
+      <username>YOUR OLM ID</username>
+      <password>YOUR PASSWORD</password>
+    </server>
+  </servers>
+</settings>
